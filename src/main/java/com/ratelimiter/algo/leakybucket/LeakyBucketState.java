@@ -1,11 +1,11 @@
 package com.ratelimiter.algo.leakybucket;
 
 public class LeakyBucketState {
-    public double waterLevel; // Current "water" in the bucket
+    public double token; // Current "water" in the bucket
     public long lastLeakTimestamp; // Last time we applied leaking
 
-    public LeakyBucketState(double waterLevel, long lastLeakTimestamp) {
-        this.waterLevel = waterLevel;
+    public LeakyBucketState(double token, long lastLeakTimestamp) {
+        this.token = token;
         this.lastLeakTimestamp = lastLeakTimestamp;
     }
 
